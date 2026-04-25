@@ -339,7 +339,35 @@ input {
     border-radius: 8px;
     flex: 1;
 }
+/* Badge Widget specific styling */
+.badge-widget {
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
 
+.badge-icon-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: badgeFloat 3s ease-in-out infinite;
+}
+
+@keyframes badgeFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+}
+
+.widget-label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 .chat-footer button {
     background: var(--primary);
     border: none;

@@ -26,12 +26,12 @@ const Dashboard = ({ logs, xp, weight, height }) => {
             {/* --- SECTION 1: NUMERIC STATS CARDS --- 
                 Displays: BMI Status, Twin Evolution (XP), and Wellness Index %
             */}
-            <StatsCards 
-                score={latestLog?.wellnessScore || 0} 
-                xp={xp} 
-                weight={weight} 
-                height={height} 
-            />
+          <StatsCards 
+    score={latestLog?.wellnessScore || 0} 
+    xp={xp}  // This 'xp' comes from the User object in App.jsx
+    weight={weight} 
+    height={height} 
+/>
 
             {/* --- SECTION 2: WELLNESS PROGRESS SIMULATION --- 
                 Displays: The AreaChart trend line.

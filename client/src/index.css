@@ -94,7 +94,26 @@ h2 {
 p {
   margin: 0;
 }
+.msg.bot {
+    background: #1e293b !important;
+    color: #f1f5f9;
+    align-self: flex-start;
+    padding: 12px 15px;
+    border-radius: 15px 15px 15px 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    max-width: 85%;
+    border: 1px solid #334155;
+    white-space: pre-wrap;
+    /* Ensure the download button doesn't stretch weirdly */
+    display: flex;
+    flex-direction: column;
+}
 
+.msg.bot button:hover {
+    color: white !important;
+    opacity: 0.8;
+}
 code,
 .counter {
   font-family: var(--mono);
