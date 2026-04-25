@@ -97,4 +97,4 @@ const AIChatBot = ({ userId, isOpen, setIsOpen }) => {
     );
 };
 
-export default AIChatBot;
+export default AIChatBot; 
